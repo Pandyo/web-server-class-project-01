@@ -1,103 +1,102 @@
-import Image from "next/image";
+'use client'
+import ClientOnly from './components/ClientOnly'
+import { motion } from 'framer-motion'
 
-export default function Home() {
+export default function PortfolioPage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <main className="relative flex flex-col min-h-screen pt-24 md:pt-28 bg-white dark:bg-[#0b1020] text-slate-900 dark:text-slate-100 transition-colors duration-500 overflow-x-hidden">
+        <ClientOnly>
+        <motion.div
+          initial={{ scale: 1, opacity: 0.15 }}
+          animate={{ rotate: 360, scale: 1.2, opacity: 0.2 }}
+          transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
+          className="absolute w-[45vw] h-[45vw] max-w-[900px] max-h-[900px] bg-gradient-to-tr from-indigo-400 via-purple-400 to-pink-400 opacity-30 rounded-full blur-3xl left-[-10%] top-[-20%]"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        <motion.div
+          initial={{ scale: 1, opacity: 0.12 }}
+          animate={{ rotate: -360, scale: 1.05, opacity: 0.16 }}
+          transition={{ duration: 50, repeat: Infinity, ease: 'linear' }}
+          className="absolute w-[35vw] h-[35vw] max-w-[700px] max-h-[700px] bg-gradient-to-br from-amber-300 via-red-300 to-pink-300 opacity-20 rounded-full blur-2xl right-[-10%] bottom-[10%]"
+        />
+      <section className="flex-grow flex items-center justify-center relative translate-y-10 md:translate-y-1">
+        <div className="max-w-6xl mx-auto px-6 relative">
+          <div className="grid md:grid-cols-3 gap-10 items-center">
+            <motion.div
+              initial={{ x: -30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-6 md:col-span-1"
+            >
+            <h1 className="text-4xl md:text-4xl font-extrabold leading-tight font-pacifico">
+                Hyesu Portfolio 🐼
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-pink-500 pl-2"></span>
+            </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-xl pt-5 font-hyesu italic" >
+                Hello. I am Park Hye-su, class of '24, currently studying Information Security at Joongbu University
+            </p>
+
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-xl font-hyesu italic">
+                안녕하세요. 중부대학교 정보보호학과에 재학 중인 24학번 박혜수 입니다.
+            </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ scale: 0.98, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.9 }}
+              className="w-full md:col-span-2"
+            >
+              <div className="max-w-full md:max-w-[1100px] w-full mx-auto bg-indigo-100 from-white to-slate-100 dark:from-slate-900 dark:to-slate-800 rounded-2xl shadow-2xl p-6 flex flex-col justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-60 bg-gradient-to-br from-pink-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl overflow-hidden rounded-xl">
+                    <img src="/hyesu.JPG" alt="Hyesoo" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="flex flex-col justify-center pt-8">
+                    <div className="font-semibold text-4xl md:text-4xl px-3">박 혜 수</div>
+                    <hr className="ml-3 border-t border-gray-400 mt-2 w-[400px]" />
+                    <div className="text-sm text-slate-500 dark:text-slate-300 px-3 pt-2">중부대학교 정보보호학과</div>
+                    <div className="text-sm text-slate-500 dark:text-slate-300 px-3">경기도 고양시 덕양구 대자동 동헌로 305</div>
+
+                    <div className="mt-4 text-sm text-slate-600 dark:text-slate-300 pt-18">
+                      <ul className="space-y-2 max-w-6xl mx-auto px-3 py-4">
+                        <li className="whitespace-nowrap">📞 010-1234-5678</li>
+                        <li className="whitespace-nowrap">✉️ keshupark0113@gmail.com</li>
+                        <li className="flex items-center gap-1 whitespace-nowrap">
+                          <img src="/instar.png" className="w-4 h-4 object-contain" alt="insta" />
+                          <span>hs_050113</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+
+    <footer className="mt-auto mx-auto px-6 py-5 text-center text-sm text-slate-500 w-full">
+      <hr className="mb-4" />
+        <div className="flex justify-center gap-3">
+          <a href="https://github.com/Pandyo">
+            <img src="/github.png" width="40" alt="github" />
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+          <a href="https://pandyo.tistory.com/">
+            <img src="/tistory.png" width="40" alt="tistory" />
+          </a>
+          <a href="https://www.linkedin.com/in/%ED%98%9C%EC%88%98-%EB%B0%95-48506b35a/">
+            <img src="/linkedin.png" width="40" alt="linkedin" />
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <p className="mt-2">
+          Copyright © 2025 pandyo
+          <br />
+          Contact: keshupark0113@gmail.com | 010-1234-5678 
+        </p>     
       </footer>
-    </div>
-  );
+      </ClientOnly>
+    </main>
+  )
 }
