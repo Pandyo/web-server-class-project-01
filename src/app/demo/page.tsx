@@ -124,7 +124,7 @@ export default function DemoPage() {
 
                 <div className="rounded-xl p-6 bg-white dark:bg-slate-800 shadow transition flex flex-col items-center text-center">
                     <img
-                        src=""
+                        src="vercel.svg"
                         className="w-28 h-28 rounded-full object-cover mb-4 shadow-lg"
                     />
                     <h3 className="text-xl font-semibold">정윤서</h3>
@@ -142,14 +142,14 @@ export default function DemoPage() {
 
                 <div className="rounded-xl p-6 bg-white dark:bg-slate-800 shadow transition flex flex-col items-center text-center">
                     <img
-                        src=""
+                        src="Interludeal.jpeg"
                         className="w-28 h-28 rounded-full object-cover mb-4 shadow-lg"
                     />
                     <h3 className="text-xl font-semibold">정재성</h3>
                     <p className="text-sm text-slate-500 dark:text-slate-400">중부대학교</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">정보보호학과 / 22학번</p>
                     <div className="flex gap-3 mt-4">
-                        <a href="" target="_blank" className="hover:opacity-80">
+                        <a href="https://github.com/Interludeal" target="_blank" className="hover:opacity-80">
                         <img src="github.png" className="w-5 h-5" />
                         </a>
                         <a href="" target="_blank" className="hover:opacity-80">
