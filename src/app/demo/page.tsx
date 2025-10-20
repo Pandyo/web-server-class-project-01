@@ -131,7 +131,7 @@ export default function DemoPage() {
                     <p className="text-sm text-slate-500 dark:text-slate-400">중부대학교</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">정보보호학과 / 24학번</p>
                     <div className="flex gap-3 mt-4">
-                        <a href="" target="_blank" className="hover:opacity-80">
+                        <a href="https://github.com/oesp91" target="_blank" className="hover:opacity-80">
                         <img src="github.png" className="w-5 h-5" />
                         </a>
                         <a href="" target="_blank" className="hover:opacity-80">

@@ -33,7 +33,7 @@ export default function PortfolioPage() {
             </h1>
 
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-xl pt-5 font-hyesu italic" >
-                Hello. I am Park Hye-su, class of '24, currently studying Information Security at Joongbu University
+                Hello. I am Park Hye-su, class of 24, currently studying Information Security at Joongbu University
             </p>
 
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-xl font-hyesu italic">
