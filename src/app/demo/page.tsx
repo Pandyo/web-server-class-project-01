@@ -124,7 +124,7 @@ export default function DemoPage() {
 
                 <div className="rounded-xl p-6 bg-white dark:bg-slate-800 shadow transition flex flex-col items-center text-center">
                     <img
-                        src="vercel.svg"
+                        src="oesp91.jpeg"
                         className="w-28 h-28 rounded-full object-cover mb-4 shadow-lg"
                     />
                     <h3 className="text-xl font-semibold">정윤서</h3>
