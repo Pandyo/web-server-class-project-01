@@ -152,7 +152,7 @@ export default function DemoPage() {
                         <a href="https://github.com/Interludeal" target="_blank" className="hover:opacity-80">
                         <img src="github.png" className="w-5 h-5" />
                         </a>
-                        <a href="https://2025-2-middle-nextjs-rig9.vercel.app/" target="_blank" className="hover:opacity-80">
+                        <a href="https://20252-middle.vercel.app/" target="_blank" className="hover:opacity-80">
                         <img src="cleck.png" className="w-5 h-5" />
                         </a>
                     </div>
