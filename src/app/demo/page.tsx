@@ -95,10 +95,10 @@ export default function DemoPage() {
                     <p className="text-sm text-slate-500 dark:text-slate-400">중부대학교</p>
                     <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">정보보호학과 / 24학번</p>
                     <div className="flex gap-3 mt-4">
-                        <a href="" target="_blank" className="hover:opacity-80">
+                        <a href="https://github.com/Pandyo" target="_blank" className="hover:opacity-80">
                         <img src="github.png" className="w-5 h-5" />
                         </a>
-                        <a href="" target="_blank" className="hover:opacity-80">
+                        <a href="https://web-server-class-project-01.vercel.app/" target="_blank" className="hover:opacity-80">
                         <img src="cleck.png" className="w-5 h-5" />
                         </a>
                     </div>
@@ -116,7 +116,7 @@ export default function DemoPage() {
                         <a href="https://github.com/J4EH00N" target="_blank" className="hover:opacity-80">
                         <img src="github.png" className="w-5 h-5" />
                         </a>
-                        <a href="" target="_blank" className="hover:opacity-80">
+                        <a href="https://midterm-portfolio-two.vercel.app/" target="_blank" className="hover:opacity-80">
                         <img src="cleck.png" className="w-5 h-5" />
                         </a>
                     </div>
@@ -152,7 +152,7 @@ export default function DemoPage() {
                         <a href="https://github.com/Interludeal" target="_blank" className="hover:opacity-80">
                         <img src="github.png" className="w-5 h-5" />
                         </a>
-                        <a href="" target="_blank" className="hover:opacity-80">
+                        <a href="https://2025-2-middle-nextjs-rig9.vercel.app/" target="_blank" className="hover:opacity-80">
                         <img src="cleck.png" className="w-5 h-5" />
                         </a>
                     </div>
